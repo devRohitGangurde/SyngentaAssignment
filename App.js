@@ -27,9 +27,9 @@ import {
 
 //Screens
 import SplashScreen from './src/screens/SplashScreen'
-import TVShowDetailScreen from './src/screens/TVShowDetailScreen';
-import TVShowListScreen from './src/screens/TVShowListScreen';
-// import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen'
+import RestorantDetailScreen from './src/screens/RestorantDetailScreen';
+import RestorantListScreen from './src/screens/RestorantListScreen';
+import IntroSlider from './src/screens/IntroSlider';
 
 export default class App extends Component {
 
@@ -62,16 +62,22 @@ export default class App extends Component {
                   hideNavBar
                   initial
                 />
+                  <Scene
+                  key='IntroSlider'
+                  component={IntroSlider}
+                  title='IntroSlider'
+                  hideNavBar
+                />
                  <Scene
-                  key='TVShowListScreen'
-                  component={TVShowListScreen}
-                  title='TVShowListScreen'
+                  key='RestorantListScreen'
+                  component={RestorantListScreen}
+                  title='RestorantListScreen'
                   hideNavBar
                 />
                 <Scene
-                  key='TVShowDetailScreen'
-                  component={TVShowDetailScreen}
-                  title='TVShowDetailScreen'
+                  key='RestorantDetailScreen'
+                  component={RestorantDetailScreen}
+                  title='RestorantDetailScreen'
                   hideNavBar
                 /> 
               </Stack>
